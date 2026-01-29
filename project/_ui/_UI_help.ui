@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>838</width>
+    <height>727</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>How to use</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Arial'; font-size:12pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The application is intended to visualize and save data obtained from ADCP sensors and stored in Matlab (mat) format in winADCP software. winADCP saves ADCP data in Matlab Level 1 format. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;  &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;The application consists of 4 windows: &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Main control&lt;/span&gt; represents two tabs: Header tab, containing data file header, and Data tab, containing ADCP data for loaded file. Multiple files can be loaded and browsed through the window. There are options to export ADCP data in Excel format (either loaded file or all available) and export all the loaded data (multiple files) into single GIS compatible GEOJSON or WKT ASCII file as point with relevant attributes. Combobox is used to navigate through loaded files. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Profile view&lt;/span&gt; represents 3D view of single ADCP profile along with its data in numeric format. Mouse wheel is used to navigate through the window. Buttons &lt;span style=&quot; font-weight:700;&quot;&gt;'BWD'&lt;/span&gt;/&lt;span style=&quot; font-weight:700;&quot;&gt;'FWD'&lt;/span&gt; are used to navigate through profiles. View may be set in orthographic or perspective projection by &lt;span style=&quot; font-weight:700;&quot;&gt;'Ortho'&lt;/span&gt;/&lt;span style=&quot; font-weight:700;&quot;&gt;'Persp'&lt;/span&gt; buttons. Current image may be saved in &lt;span style=&quot; font-weight:700;&quot;&gt;png&lt;/span&gt; format by pressing &lt;span style=&quot; font-weight:700;&quot;&gt;'Save this image'&lt;/span&gt; button. &lt;span style=&quot; font-weight:700;&quot;&gt;'Save all images'&lt;/span&gt; button is used to save all the profiles of the loaded file with the same settings. Text entry is used to type text to be plotted on the top of legend of the exported images. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Compass view&lt;/span&gt; represents vertical compass view of the current and neighbouring profiles along with relevant metadata (timestamp, Lat, Lon). The view is centered on the current profile. Number of visible profiles may be changed by mouse wheel. View limits and vector scale may be set using relevant text entries. Buttons &lt;span style=&quot; font-weight:700;&quot;&gt;'BWD'&lt;/span&gt;/&lt;span style=&quot; font-weight:700;&quot;&gt;'FWD'&lt;/span&gt; are used to navigate through profiles. Current image may be saved in &lt;span style=&quot; font-weight:700;&quot;&gt;png&lt;/span&gt; format by pressing &lt;span style=&quot; font-weight:700;&quot;&gt;'Save this image'&lt;/span&gt; button. &lt;span style=&quot; font-weight:700;&quot;&gt;'Save all images'&lt;/span&gt; button is used to save all the profiles of the loaded file with the same settings. Text entry is used to type text to be plotted on the top of legend of the exported images. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700;&quot;&gt;Map view&lt;/span&gt; represents geographical view of all the loaded ADCP data. Vector scale may be set using scale text entry. Slider is used to navigate through bins (depths). &lt;span style=&quot; font-weight:700;&quot;&gt;'Animate depth'&lt;/span&gt; checkbox used to turn on/off background color change with depth. Current image may be saved in &lt;span style=&quot; font-weight:700;&quot;&gt;png&lt;/span&gt; format by pressing &lt;span style=&quot; font-weight:700;&quot;&gt;'Save this image'&lt;/span&gt; button. Text entry is used to type text to be plotted on the top of legend of the exported image. &lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;  &lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'MS Shell Dlg 2';&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
