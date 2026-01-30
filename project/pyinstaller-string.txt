@@ -1,1 +1,0 @@
-pyinstaller --noconfirm --onedir --windowed --icon "C:\_AK\py31311\3D_Geo\_src\_internal\blob.ico" --add-data "C:\_AK\py31311\3D_Geo\_src\_internal\blob.ico;." --add-data "C:\_AK\py31311\3D_Geo\_src\_internal\se_view.png;." --add-data "C:\_AK\py31311\3D_Geo\_src\_internal\top_view.png;."  "C:\_AK\py31311\3D_Geo\_src\ADCPlot_3D_Geo.py"
